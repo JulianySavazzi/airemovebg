@@ -1,3 +1,11 @@
+<script setup lang="ts">
+useHead({
+	title: "AI Remove Background"
+})
+</script>
+
 <template>
- <NuxtPage/>
+<NuxtLayout>
+	<NuxtPage/>
+</NuxtLayout>
 </template>
