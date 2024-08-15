@@ -1,7 +1,15 @@
 <script setup lang="ts">
 const handleFileUpload = async (file: File) => {
+
+	//enviar arquivo da imagem usando form-data
+	const formData = new FormData()
+	formData.append('file', file)
+
 	//$fetch -> global 
-	const response = await $fetch('/api/upload', { method: 'POST' })
+	const response = await $fetch('/api/upload', {
+		method: 'POST',
+		body: formData
+	})
 	console.log("file", file)
 }
 </script>
