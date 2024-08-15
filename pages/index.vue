@@ -4,5 +4,5 @@
 
 <template>
 <Header/>
-<Upload/>
+<Home/>
 </template>
